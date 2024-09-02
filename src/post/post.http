@@ -1,0 +1,45 @@
+
+### List post
+GET http://localhost:3000/post
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWxsYW5AdGVzdGUuY29tIiwiaWF0IjoxNzI1MzE0NzQ4LCJleHAiOjE3MjUzMTgzNDh9.E7TYeIEC2r4UFxnB1AY3v9Vsz79HjuBDQtSyzYOrYHM
+
+
+### get one post
+
+GET http://localhost:3000/post/1
+
+### Create post
+POST http://localhost:3000/post
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWxsYW5AdGVzdGUuY29tIiwiaWF0IjoxNzI1MzE0NzQ4LCJleHAiOjE3MjUzMTgzNDh9.E7TYeIEC2r4UFxnB1AY3v9Vsz79HjuBDQtSyzYOrYHM
+
+{
+    "title": "Allan",
+    "text": "allan@teste.com"
+}
+
+###Edit post
+
+PATCH http://localhost:3000/post/1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWxsYW5AdGVzdGUuY29tIiwiaWF0IjoxNzI0NzIxNjgyLCJleHAiOjE3MjQ3MjUyODJ9.muQkiQrpabrPCUX0-8WBrWpc_8xiKAeDRBzE_S9xpY0
+
+{
+    "name": "Allan da Silva"
+}
+
+### delete
+
+DELETE  http://localhost:3000/post/1
+
+### Login
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name": "Allan",
+    "email": "allan@teste.com",
+    "password": "123456"
+}
