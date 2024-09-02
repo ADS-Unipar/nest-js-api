@@ -22,6 +22,7 @@ Content-Type: application/json
 
 PATCH http://localhost:3000/user/1
 Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWxsYW5AdGVzdGUuY29tIiwiaWF0IjoxNzI0NzIxNjgyLCJleHAiOjE3MjQ3MjUyODJ9.muQkiQrpabrPCUX0-8WBrWpc_8xiKAeDRBzE_S9xpY0
 
 {
     "name": "Allan da Silva"
@@ -30,3 +31,14 @@ Content-Type: application/json
 ### delete
 
 DELETE  http://localhost:3000/user/1
+
+### Login
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "name": "Allan",
+    "email": "allan@teste.com",
+    "password": "123456"
+}

@@ -24,6 +24,10 @@ export class UserService {
     return this.repository.findOneBy({ id });
   }
 
+  findOneByEmail(email: string) {
+    return this.repository.findOneBy({ email });
+  }
+
   async update(id: number, dto: UpdateUserDto) {
     const user = await this.repository.findOneBy({ id });
     if (!user) {
